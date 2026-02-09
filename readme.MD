@@ -1,12 +1,12 @@
-#shell script
-
-**steps**
-* create repo in Github
-* clone repo in local laptop
-* start developing 
-* add rhe files in temp area
-* commit the changes
-* push the changes to Github
-
-
-Hi All is Well. Hellow world
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-nginx-pod
+  labels:
+    app: web
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.25
+    ports:
+    - containerPort: 80
